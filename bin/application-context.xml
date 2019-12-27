@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="radio" class="com.demo.bean.Radio" autowire="byName"></bean>
+	<bean id="recvier" class="com.demo.bean.Reciver">
+		<property name="mode">
+			<value>AM</value>
+		</property>
+
+		<property name="band">
+			<value>102.5</value>
+		</property>
+	</bean>
+</beans>  
